@@ -4,7 +4,7 @@ function gm(hour){
     }else if (hour < 17){
         return "Good Afternoon";
     }else if(hour <21){
-        return "Good Evnening";
+        return "Good Evnening"
     }else if(hour <24){
         return "Good Night";
     }else{
