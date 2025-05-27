@@ -8,7 +8,5 @@ let people =[
 let teenage = people.filter(people=>
     people.Age<=18
 );
-let name = people.filter(people =>
-    people.StartsWith(a)
-);
+
 console.log(teenage)
