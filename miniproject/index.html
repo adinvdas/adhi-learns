@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <form>
+      <label for="income">Enter your income</label>
+      <input type="number" id="income" name="income" required />
+      <br /><br />
+      <p>Expenses of this month is</p>
+      <label for="exp1">Groceries</label>
+      <input type="number" id="exp1" name="exp1" required /><br />
+      <label for="exp2">utilities</label>
+      <input type="number" id="exp2" name="exp2" required /><br />
+      <label for="exp3">Recharge</label>
+      <input type="number" id="exp3" name="exp3" required /><br />
+      <label for="exp4">Transportation</label>
+      <input type="number" id="exp4" name="exp4" required /><br />
+      <label for="exp5">personal care</label>
+      <input type="number" id="exp5" name="exp5" required /><br />
+      <label for="exp6">Entertainment</label>
+      <input type="number" id="exp6" name="exp6" required /><br />
+      <label for="exp7">Health</label>
+      <input type="number" id="exp7" name="exp7" required /><br />
+      <label for="exp8">Shopping</label>
+      <input type="number" id="exp8" name="exp8" required /><br />
+    </form>
+    <button type="button" onclick="balance()">Click me</button>
+     <p id="balance">Enter numbers and click an operation</p>
+    <script>
+
+        function exp(){
+    const exp1 = parseFloat(document.getElementById('exp1').value);
+    const exp2 = parseFloat(document.getElementById('exp2').value);
+    const exp3 = parseFloat(document.getElementById('exp3').value);
+    const exp4 = parseFloat(document.getElementById('exp4').value);
+    const exp5 = parseFloat(document.getElementById('exp5').value);
+    const exp6 = parseFloat(document.getElementById('exp6').value);
+    const exp7 = parseFloat(document.getElementById('exp7').value);
+    const exp8 = parseFloat(document.getElementById('exp8').value);
+    return { exp1,exp2,exp3,exp4,exp5,exp6,exp7,exp8};
+}
+function getincome(){
+    const income = parseFloat(document.getElementById('income').value);
+    return income;
+}
+function Displaysum(message){
+    document.getElementById('balance').innerText = `Remaining Balance: ₹${message}`;
+}
+function expsum(){
+    const tot_exp = exp();
+    if(tot_exp){
+        const sum = tot_exp.exp1 + tot_exp.exp2 + tot_exp.exp3 + tot_exp.exp4 + tot_exp.exp5 + tot_exp.exp6 + tot_exp.exp7 + tot_exp.exp8;
+        return sum
+    }
+}
+function balance(){
+    const income = getincome();
+    const expense = expsum();
+    const balance = income - expense;
+    Displaysum(balance);
+}
+
+    </script>
+  </body>
+</html>
