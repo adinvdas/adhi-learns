@@ -30,6 +30,7 @@
       <input type="number" id="exp8" name="exp8" required /><br />
     </form>
     <button type="button" onclick="balance()">Click me</button>
+    <button type="reset">Reset</button>
      <p id="balance">Enter numbers and click an operation</p>
     <script>
 
@@ -64,7 +65,9 @@ function balance(){
     const balance = income - expense;
     Displaysum(balance);
 }
-
+function resetOutput() {
+    document.getElementById('balance').innerText = "Enter numbers and click an operation";
+}
     </script>
   </body>
 </html>
