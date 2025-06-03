@@ -24,9 +24,12 @@ Consist of lots of code packages written by other porgrammers and users.
 These are the things that we use often. So we can use theses packages instead of writting the whole code from scratch.
 
 ## Browser Dev Tools
-let you inspect, debug, and tweak websites in real-time
+it is a built in feature on browsers that let you inspect, debug, and tweak websites in real-time.
+it's like taking an x-ray of a website to know what is actually inside of that website. It can be done with mostly every websites
  ## it is used to
 1. See how a website is built (HTML, CSS, JavaScript)
 2. Debug errors (why is my button not working?)
 3. Test changes instantly (without reloading)
 4. Check performance (why is my site slow?)
+
+
