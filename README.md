@@ -16,6 +16,7 @@ with node its like driving in an open space with many different
 
 ## Alternatives of node
 deno : More secure, modern alternative to Node
+
 bun : Faster, all-in-one runtime (replaces Node & NPM)
 
 
@@ -26,7 +27,7 @@ These are the things that we use often. So we can use theses packages instead of
 ## Browser Dev Tools
 it is a built in feature on browsers that let you inspect, debug, and tweak websites in real-time.
 it's like taking an x-ray of a website to know what is actually inside of that website. It can be done with mostly every websites
- ## it is used to
+ ### it is used to
 1. See how a website is built (HTML, CSS, JavaScript)
 2. Debug errors (why is my button not working?)
 3. Test changes instantly (without reloading)
