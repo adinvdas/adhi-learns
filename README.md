@@ -12,11 +12,14 @@ Node.js gives the chef access to many more kitchens — like your system, deskto
 
 ### Runtime Environment
 
-A runtime environment is like a playground where code can be executed.
+A runtime environment is the place where your code runs — it provides everything needed to execute and manage programs.
 
-Without Node.js, using JavaScript is like driving only on highways (limited to the browser).
-With Node.js, it’s like driving in open terrain — you can go almost anywhere.
+For JavaScript, the browser was its original runtime.
+But with Node.js, JavaScript now has a runtime on your computer system too — outside the browser.
 
+Think of it like this:
+Without Node.js, JavaScript is like driving only on highways (web browsers).
+With Node.js, it’s like driving off-road — you have more flexibility and can go many more places, like servers, desktop apps, or command-line tools.
 
 
 ### Alternatives to Node.js
