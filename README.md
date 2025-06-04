@@ -31,10 +31,10 @@ With Node.js, it’s like driving off-road — you have more flexibility and can
 
 ### NPM (Node Package Manager)
 
-NPM is a large collection of code packages written by other developers.
-These packages solve common problems, so instead of writing code from scratch, you can use ready-made solutions.
-It saves time and effort, like using ingredients that are already prepared.
+NPM is a tool that comes with the Node js.
+It is a package that consists of the code written by other programmers. By using NPM people don't have to build everything from the scratch and instead they can use these ready to use packages.
 
+Think of NPM as a appstore when we want to use a particular app we install it and use it, Likewise when we need to use a package on our code we install a NPM package and use it.
 
 
 ## Browser Dev Tools
