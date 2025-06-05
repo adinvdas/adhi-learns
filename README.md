@@ -13,6 +13,10 @@ Node.js gives the chef access to many more kitchens — like your system, deskto
 ### Runtime Environment
 
 A runtime environment is the place where your code runs — it provides everything needed to execute and manage programs.
+Runtime environment is the most important thing for a JS code since it cannot be run without a runtime environment. Apart from JS languages like Python, C#, PHP also need a runtime environment to run the code.
+
+Runtime environment use the JS engines to read and execute the js codes. Engines are used to convert JS into machine code and run it. The popular engines used in the industries are V8, JavaScriptCore, SpiderMonkey.
+Runtime environments uses these engines along with some tools and APIs so that they can provide everything that's needed for the execution of these programs. The popular runtime environments that are used in the industries are Browser, Node.js, Dino etc.
 
 For JavaScript, the browser was its original runtime.
 But with Node.js, JavaScript now has a runtime on your computer system too — outside the browser.
