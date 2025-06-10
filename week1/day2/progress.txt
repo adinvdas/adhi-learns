@@ -1,0 +1,12 @@
+The Second day was really fine enjoyed the coding and all
+didn,t knew how to do the debug then gradually understood it.
+The code to greet according to time was easy and I liked it
+the code to check whether the number is even or not was not too bad
+
+
+console.log()
+it is a command in the js to show the output. We can show a function, a text, number etc
+
+VS code debugger
+in vs code debugger we can debug the codes without an external assistance. Since we are doing it inside the vs code itself it's better and easy
+we can set break points at a particlar level and see the changes.

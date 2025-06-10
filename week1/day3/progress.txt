@@ -1,0 +1,5 @@
+compared to day2 ,day3 was a real mess 
+it actually took me two days to finish it 
+the count code was messy since I did not understood the keys that was used to split these words even after I used the LLM and the youtube then I understood it when I asked my friend for it so for me it was the hard part of it. other than that day 3 was also nice to do.
+
+Understood new array tools that was nice

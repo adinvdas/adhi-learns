@@ -1,0 +1,13 @@
+Node :
+node js is a runtime environment
+JS is a language that is created to make webpages. By using node we can create server side applicaions.
+command tools and desktop applicaions.
+ While we use the node it gives us an oppurtunity to run js outside the Web browser
+
+ NPM (node package manager)
+ Consist of lots of code packages written by other porgrammers and users.
+ These are the things that we use often. So we can use theses packages instead of writting the whole code from scratch.
+
+browser dev tools
+
+control panel for web pages that let you inspect, modify, and debug websites.
