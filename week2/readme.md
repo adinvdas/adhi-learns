@@ -26,12 +26,11 @@ Used to navigate the users into a particular area of the webpage
 
 Like if they want to directly go to the contact section of the webpage they can click on the text "CONTACT" and it will guide to the contact section
 
-> Example: 
-> <nav>
->  <a href="/home">Home</a>
->  <a href="/about">About</a>
->  <a href="/contact">Contact</a>
->  </nav>
+ Example<nav>
+  <a href="/home">Home</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+  </nav>
 
 <main> 
 The primary space where the main action happens.
