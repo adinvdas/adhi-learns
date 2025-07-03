@@ -130,13 +130,3 @@ You create a grid container and define how many **rows** and **columns** you wan
 - Full control over rows and columns.
 
 ---
-
-## Summary
-
-| Feature     | Best For     | Direction     |
-|-------------|--------------|----------------|
-| Box Model   | Spacing/Box Design | N/A |
-| Flexbox     | 1D Layouts (Row or Column) | Horizontal **or** Vertical |
-| Grid        | 2D Layouts (Row + Column)  | Both |
-
-Use **Box Model** for element spacing, **Flexbox** for single direction layout, and **Grid** for more structured, 2D page layouts.
