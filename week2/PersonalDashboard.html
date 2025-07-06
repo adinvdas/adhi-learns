@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1 alignment="center">My dash board</h1>
-</body>
+  </head>
+  <body>
+    <div class="banner">
+      <video autoplay loop muted plays-inline>
+        <source
+          src="eclipse-over-silent-falls.3840x2160.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+    <div class="Greeting">
+      <h1 id="ques">Enter your name</h1>
+      <br />
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="hi()">ENTER</button>
+    </div>
+    <div class="greetingSection"
+      id="greetingSection">
+      <h1 id="TimeGreeting"></h1>
+      <h2 id="clock"></h2>
+    </div>
+
+
+    <div class="task-section" id="task-section">
+      <h2>Your Tasks</h2>
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Add a new task"
+      />
+      <button onclick="addTask()">Add Task</button>
+      <div class="taskbox">
+        <div class="leftbox">
+          <h3>Tasks</h3>
+          <ul id="tasklist"></ul>
+        </div>
+        <!-- <div class="rightbox">
+          <h3>Completed Tasks</h3>
+          <ul id="completedTasks"></ul>
+      </div> -->
+    </div>
+
+
+    <script>
+      // function greet() {
+      //   const name = document.getElementById("username").value;
+      //   if (name.trim() != "") {
+      //     alert("welcome," + name + "!");
+      //   } else {
+      //     alert("Enter a valid name");
+      //   }
+      // }
+
+      function hi() {
+        const name = document.getElementById("username").value;
+        const greetingHeader = document.querySelector(".Greeting h1");
+        // greetingHeader.textContent = "Welcome, " + name;
+        document.getElementById("ques").style.display = "none";
+        document.getElementById("username").style.display = "none";
+        document.querySelector(".Greeting button").style.display = "none";
+
+        const now = new Date();
+        const hours = now.getHours();
+        let TimeGreeting = "";
+        if (hours < 12) {
+          TimeGreeting = "Good Morning";
+        } else if (hours < 18) {
+          TimeGreeting = "Good Afternoon";
+        } else {
+          TimeGreeting = "Good Evening";
+        }
+        document.getElementById("TimeGreeting").textContent =
+          TimeGreeting + ", " + name + "!";
+        document
+          .getElementById("greetingSection")
+          .scrollIntoView({ behavior: "smooth" });
+        startClock();
+      }
+
+      function startClock() {
+        const clock = document.getElementById("clock");
+        setInterval(() => {
+          const now = new Date();
+          const timeStr = now.toLocaleTimeString();
+          clock.textContent = timeStr;
+        }, 1000);
+      }
+       function addTask(){
+        const taskInput = document.getElementById("taskInput");
+        tasktext = taskInput.value.trim();
+        if (tasktext !== "") {
+          const taskitem = document.createElement("li");
+          taskitem.textContent = tasktext;
+
+          document.getElementById("tasklist").appendChild(taskitem);
+          taskInput.value = "";
+        }
+      }
+    </script>
+  </body>
 </html>
